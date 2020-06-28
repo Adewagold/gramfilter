@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FiftyGram</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="sepia">SEPIA</string>
+    <string name="sketch">SKETCH</string>
+    <string name="toon">TOON</string>
 </resources>

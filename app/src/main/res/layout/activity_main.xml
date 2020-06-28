@@ -8,19 +8,70 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageView
+            android:id="@+id/imageview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imageview"
-            />
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sepia"
+                android:layout_width="133dp"
+                android:layout_height="115dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="applySepia"/>
+
+            <ImageView
+                android:id="@+id/toon"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:onClick="applyToon"/>
+
+            <ImageView
+                android:id="@+id/sketch"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:onClick="applySketch"/>
+        </LinearLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose Photo"
+            android:text="@string/choose_photo"
             android:id="@+id/choose_photo"
             android:onClick="choosePhoto"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sepia"
+            android:id="@+id/apply_sepia"
+            android:onClick="applySepia"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sketch"
+            android:id="@+id/applySketch"
+            android:onClick="applySketch"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/toon"
+            android:id="@+id/apply_toon"
+            android:onClick="applyToon"/>
     </LinearLayout>
 
 </ScrollView>
